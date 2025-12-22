@@ -11,10 +11,13 @@ o escopo embutido é o escopo onde a variável é reconhecida em todo o o códig
 x = 10 # variável global
 
 def escopo():
+    global x
     x = 1
 
     def escopo_interno():
-        y=2      
+        global x
+        x = 11
+        y = 2
         print(x,y)
     escopo_interno()
     print(x)
