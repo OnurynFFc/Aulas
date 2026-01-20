@@ -4,8 +4,10 @@ Retorno de valores das funçoes com return
 """
 
 def soma(a, b):
-    print("ouutros códigos")
+    if a + b > 10:
+        return 10,20
     return a + b
+
 
 
 
@@ -15,4 +17,4 @@ def soma(a, b):
 
 soma1 = soma(2, 3)
 soma2 = soma(5, 7)
-print(soma1+soma2)  # TypeError: unsupported operand type(s) for +: 'NoneType' and 'NoneType'
+print(soma(11,2))  # TypeError: unsupported operand type(s) for +: 'NoneType' and 'NoneType'
