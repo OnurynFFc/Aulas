@@ -20,7 +20,7 @@ def escopo():
         y = 2
         print(x,y)
     escopo_interno()
-    print(x)
+    # print(x)
 
 print(x)
 escopo()
