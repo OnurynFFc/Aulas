@@ -20,9 +20,13 @@ p1 ={
     'sobrenome': 'Otávio',
 }
 
-
-p1.update({'nome': 'João', 'idade': 30})  # Atualiza o dicionário com novos pares chave-valor
+tupla = ('nome', 'João')
+p1.update([tupla])  # Atualiza o dicionário com novos pares
 print(p1)
+
+
+# p1.update({'nome': 'João', 'idade': 30})  # Atualiza o dicionário com novos pares chave-valor
+# print(p1)
 
 
 
