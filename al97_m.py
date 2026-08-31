@@ -1,1 +1,5 @@
-print("esse modulo se chama", __name__)
+var_mod = 'Felipe'
+
+
+def soma(x,y):
+    return x+y

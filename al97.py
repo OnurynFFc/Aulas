@@ -7,12 +7,21 @@
 # padrão
 # O python conhece todos os módulos e pacotes presentes
 # nos caminhos de sys.path
-try:
-    import sys
-    sys.path.append('/home')
-except ModuleNotFoundError:
-    ...
-import al97_m
 
-print("esse modulo se chama", __name__)
-print(*sys.path, sep='\n')
+# try:
+#     import sys
+#     sys.path.append('/home')
+# except ModuleNotFoundError:
+#     ...
+# import al97_m
+
+# print("esse modulo se chama", __name__)
+# print(*sys.path, sep='\n')
+
+import al97_m
+from al97_m import soma, var_mod
+
+print('Este módulo se chama', __name__)
+print(var_mod)
+print(soma(1,2))
+print(al97_m.soma(1,2))
